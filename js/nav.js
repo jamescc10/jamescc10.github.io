@@ -7,7 +7,6 @@ let isSidebarOpen = true;
 // stop dragging
 document.querySelector(".header-logo").ondragstart = () => { return false; };
 document.querySelector(".sidebar-logo").ondragstart = () => { return false; };
-document.querySelector(".logo").ondragstart = () => { return false; };
 
 function hamburgerButtonPress() {
     if(isSidebarOpen) {

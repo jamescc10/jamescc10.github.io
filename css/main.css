@@ -2,6 +2,8 @@
     --main-bg-color: #0A0A0A;
     --main-txt-color: white;
     --main-txt-color-faded: rgb(107, 107, 107);
+    --main-txt-color-slightly-faded: #e7e7e7;
+    --main-txt-color-slightly-less-faded: #cacaca;
 }
 
 html, body {
@@ -20,84 +22,4 @@ html, body {
 
     background-color: var(--main-bg-color);
     color: var(--main-txt-color);
-}
-
-@media screen and (min-width: 500px) { /* not phone / big screen */
-    .main {
-        margin: 0;
-        padding: 0;
-        min-width: 100vw;
-        min-height: 92vh;
-    }
-
-    .main > .name {
-        font-size: 4.5vw;
-        position: absolute;
-        margin-left: 8vw;
-        margin-top: 10vh;
-    }
-
-    .main > .about {
-        font-size: 1.5vw;
-        position: absolute;
-        margin-left: 8.3vw;
-        margin-top: 20vh;
-        color: var(--main-txt-color-faded);
-    }
-
-    .main > .logo {
-        font-size: 1vw;
-        position: absolute;
-        margin-left: 70vw;
-        margin-top: 10vh;
-        width: 20vw;
-    }
-
-    .main > .githubLink {
-        font-size: 1vw;
-        position: absolute;
-        margin-top: 88vh;
-        margin-left: 1vw;
-        cursor: pointer;
-    }
-}
-
-@media screen and (max-width: 500px) { /* if its under 500px its mobile or small screen */
-    .main {
-        margin: 0;
-        padding: 0;
-        min-width: 100vw;
-        min-height: 100vh;
-    }
-
-    .main > .name {
-        font-size: 10vw;
-        position: absolute;
-        margin-left: 8vw;
-        margin-top: 10vh;
-    }
-
-    .main > .about {
-        font-size: 3.5vw;
-        position: absolute;
-        margin-left: 8.3vw;
-        margin-top: 16vh;
-        color: var(--main-txt-color-faded);
-    }
-
-    .main > .logo {
-        font-size: 1vw;
-        position: absolute;
-        margin-left: 10vw;
-        margin-top: 20vh;
-        width: 80vw;
-    }
-
-    .main > .githubLink {
-        font-size: 4vw;
-        position: absolute;
-        margin-top: 96vh;
-        margin-left: 4vw;
-        cursor: pointer;
-    }
 }

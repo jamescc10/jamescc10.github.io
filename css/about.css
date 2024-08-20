@@ -1,0 +1,25 @@
+.mainHeader {
+    font-size: 4vw;
+    margin-top: 10vh;
+    margin-left: 5vw;
+    position: absolute;
+}
+
+.mainBody {
+    font-size: 1.5vw;
+    line-height: 1.2;
+    color: var(--main-txt-color-slightly-less-faded);
+    position: absolute;
+    margin-left: 5vw;
+    margin-top: 20vh;
+}
+
+.link {
+    text-decoration: none;
+    font-weight: 700;
+    color: var(--main-txt-color-slightly-faded);
+}
+
+.link:visited {
+    text-decoration: none;
+}

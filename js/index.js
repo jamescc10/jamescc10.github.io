@@ -1,3 +1,5 @@
+document.querySelector(".logo").ondragstart = () => { return false; };
+
 let currentTextIndex = 0;
 
 let textAnimation = async function() {
