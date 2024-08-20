@@ -1,0 +1,21 @@
+<svg width="220" height="220" viewBox="0 0 220 220" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g filter="url(#filter0_f_15_3)">
+<path d="M210 110C210 165.228 165.228 210 110 210C54.7715 210 10 165.228 10 110C10 54.7715 54.7715 10 110 10C165.228 10 210 54.7715 210 110Z" fill="url(#paint0_radial_15_3)"/>
+<path d="M210 110C210 165.228 165.228 210 110 210C54.7715 210 10 165.228 10 110C10 54.7715 54.7715 10 110 10C165.228 10 210 54.7715 210 110Z" fill="url(#paint1_linear_15_3)" fill-opacity="0.2"/>
+</g>
+<defs>
+<filter id="filter0_f_15_3" x="0" y="0" width="220" height="220" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feGaussianBlur stdDeviation="5" result="effect1_foregroundBlur_15_3"/>
+</filter>
+<radialGradient id="paint0_radial_15_3" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(110 110) rotate(147.442) scale(126.358)">
+<stop offset="0.55" stop-color="#0F0F0F"/>
+<stop offset="1" stop-color="white"/>
+</radialGradient>
+<linearGradient id="paint1_linear_15_3" x1="10" y1="158" x2="210" y2="10" gradientUnits="userSpaceOnUse">
+<stop/>
+<stop offset="1" stop-color="#292929"/>
+</linearGradient>
+</defs>
+</svg>

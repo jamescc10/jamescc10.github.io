@@ -1,0 +1,118 @@
+:root {
+    --nav-bg-color: #141414;
+    --nav-border-color: #AFAFAF;
+    --nav-button-hover-bg-color: #0F0F0F;
+    --nav-hamburger-button-hover-bg-color: #151515;
+    --nav-button-sidebar-bg-color: #191919;
+    --nav-button-sidebar-hover-bg-color: #0e0e0e;
+}
+
+@media screen and (min-width: 500px) { /* not phone / big screen */
+    .sidebar {
+        display: none;
+    }
+
+    .sidebar-hamburger-button {
+        display: none;
+    }
+    
+    .header {
+        display: block;
+        height: 8vh;
+        background-color: var(--nav-bg-color);
+
+        border-bottom-color: var(--nav-border-color);
+        border-bottom-width: 3px;
+        border-bottom-style: solid;
+
+        display: flex;
+        align-items: center;
+        justify-content: end;
+        gap: 1vw;
+    }
+
+    .header > .header-logo {
+        width: 3.2vw;
+        min-width: 50px;
+        margin-right: auto;
+        margin-left: 0.3vw;
+        cursor: pointer;
+    }
+
+    .header > .header-button {
+        width: 10vw;
+        height: 8vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        user-select: none;
+        text-wrap: wrap;
+        min-width: fit-content;
+    }
+
+    .header > .header-button:hover {
+        background-color: var(--nav-button-hover-bg-color);
+        cursor: pointer;
+    }
+}
+
+@media screen and (max-width: 500px) { /* if its under 500px its mobile or small screen */
+    .header {
+        display: none;
+    }
+    
+    .sidebar-hamburger-button {
+        display: block;
+        position: absolute;
+        cursor: pointer;
+        border: #000000 0px none;
+        border-radius: 3px;
+        background-color: rgba(0, 0, 0, 0);
+        color: white;
+        margin-left: 0.5vw;
+        margin-top: 0.5vh;
+        width: 8vw;
+        height: 3.5vh;
+        font-size: larger;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .sidebar-hamburger-button:hover {
+        background-color: var(--nav-hamburger-button-hover-bg-color);
+    }
+
+    .sidebar {
+        display: flex;
+        z-index: 100000;
+        width: 85vw;
+        height: 100vh;
+        background-color: var(--nav-bg-color);
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .sidebar-logo {
+        width: 15vw;
+        margin-left: 68vw;
+        margin-top: 1vh;
+    }
+
+    .sidebar-button {
+        width: 100%;
+        height: 15vh;
+        background-color: var(--nav-button-sidebar-bg-color);
+        gap: 1;
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-size: 15vw;
+    }
+
+    .sidebar-button:hover {
+        background-color: var(--nav-button-sidebar-hover-bg-color);
+    }
+}

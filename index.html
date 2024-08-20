@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>JamesCraft</title>
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+
+    <!-- css -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/nav.css">
+</head>
+<body>
+    <nav class="header">
+        <img class="header-logo" src="images/logo.svg" onclick="window.location.href = 'index.html'">
+        <div class="header-button" onclick="window.location.href = 'about.html'">About</div>
+        <div class="header-button" onclick="window.location.href = 'projects.html'">Projects</div>
+        <div class="header-button" onclick="window.location.href = 'cubing.html'">Cubing</div>
+        <div class="header-button" onclick="window.location.href = 'gd.html'">GD</div>
+    </nav>
+
+    <!-- only mobile -->
+    <button class="sidebar-hamburger-button" onclick="hamburgerButtonPress()">&#9776;</button>
+    <nav class="sidebar">
+        <img class="sidebar-logo" src="images/logo.svg" onclick="window.location.href = 'index.html'">
+        <div class="sidebar-button" onclick="window.location.href = 'about.html'">About</div>
+        <div class="sidebar-button" onclick="window.location.href = 'projects.html'">Projects</div>
+        <div class="sidebar-button" onclick="window.location.href = 'cubing.html'">Cubing</div>
+        <div class="sidebar-button" onclick="window.location.href = 'gd.html'">GD</div>
+    </nav>
+
+    <main class="main">
+        <span class="name">JamesCraft</span>
+        <p class="about">Im a <span id="textChange">cuber</span>.</p>
+        <img class="logo" src="images/logo.svg">
+        <div class="githubLink"  onclick="window.location.href = 'https:\/\/github.com/JamesCraft10'">Github</div>
+    </main>
+
+    <!-- js -->
+    <script lang="js" src="js/nav.js"></script>
+    <script lang="js" src="js/index.js"></script>
+</body>
+</html>
