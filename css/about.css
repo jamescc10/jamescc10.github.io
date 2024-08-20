@@ -1,17 +1,5 @@
-.mainHeader {
-    font-size: 4vw;
-    margin-top: 10vh;
-    margin-left: 5vw;
-    position: absolute;
-}
-
 .mainBody {
-    font-size: 1.5vw;
-    line-height: 1.2;
     color: var(--main-txt-color-slightly-less-faded);
-    position: absolute;
-    margin-left: 5vw;
-    margin-top: 20vh;
 }
 
 .link {
@@ -22,4 +10,48 @@
 
 .link:visited {
     text-decoration: none;
+}
+
+.main {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+}
+
+@media screen and (min-width: 500px) { /* not phone / big screen */
+    .mainHeader {
+        font-size: 4vw;
+        margin-top: 10vh;
+        margin-left: 5vw;
+        position: absolute;
+    }
+    
+    .mainBody {
+        font-size: 1.5vw;
+        line-height: 1.2;
+        position: absolute;
+        margin-left: 5vw;
+        margin-top: 20vh;
+    }
+}
+
+@media screen and (max-width: 500px) { /* if its under 500px its mobile or small screen */
+    .mainHeader {
+        font-size: 10vw;
+        text-align: center;
+        position: fixed;
+        width: 100%;
+        margin-top: 10vh;
+    }
+    
+    .mainBody {
+        font-size: 4.5vw;
+        line-height: 1.2;
+        text-align: left;
+        position: fixed;
+        width: 100%;
+        margin-top: 15vh;
+        margin-left: 1vw;
+    }
 }
