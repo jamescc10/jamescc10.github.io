@@ -1,0 +1,59 @@
+.projectsContainer {
+    width: fit-content;
+    height: fit-content;
+}
+
+.projectCard {
+    background-color: var(--main-bg-color);
+    border-color: var(--main-outline-color);
+    border-style: solid;
+    border-width: 2px;
+    width: 35vw;
+    height: 30vh;
+    border-radius: 10px;
+
+    position: relative;
+    display: inline-block;
+}
+
+.projectCard > * {
+    display: inline-block;
+}
+
+.projectProjectText {
+    font-size: 3.5rem;
+    margin-left: 2vw;
+    margin-top: 2vh;
+}
+
+.projectWhatitis {
+    font-size: 1rem;
+    color: var(--main-txt-color-slightly-faded);
+    margin-left: 2vw;
+}
+
+.projectDescriptionText {
+    font-size: 0.9rem;
+    margin-top: 2.5vh;
+    margin-left: 2vw;
+    color: var(--main-txt-color-faded);
+}
+
+.projectLinks {
+    position: absolute;
+    text-align: right;
+    width: 100%;
+    height: fit-content;
+    margin-top: 0.5vh;
+    margin-left: -0.5vw;
+}
+
+.projectLinks > slot {
+    position: absolute;
+}
+
+@media screen and (max-width: 550px) { /* if its under 500px its mobile or small screen */
+    .projectCard {
+        width: 70vw;
+    }
+}

@@ -3,9 +3,89 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+
+    <title>Projects | James</title>
+    <link rel="icon" href="images/logo.svg">
+
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+
+    <!-- css -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/projects.css">
+
+    <!-- project-element template -->
+    <template id="projectElementTemplate">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/projectCard.css">
+        <div class="projectCard">
+            <div class="projectLinks">
+                <slot name="github">Github</slot>
+                <slot name="test">Test</slot>
+                <slot name="download">Download</slot>
+            </div>
+            <span class="projectProjectText"><slot name="name">Name</slot></span>
+            <br>
+            <span class="projectWhatitis"><slot name="whatitis">What it is</slot></span>
+            <span class="projectDescriptionText"><slot name="description">Description</slot></span>
+        </div>
+    </template>
 </head>
 <body>
-    <h1>TODO</h1>
+    <nav class="header">
+        <img class="header-logo" src="images/logo.svg" onclick="window.location.href = 'index.html'">
+        <div class="header-button" onclick="window.location.href = 'index.html'">Home</div>
+        <div class="header-button" onclick="window.location.href = 'about.html'">About</div>
+        <div class="header-button" onclick="window.location.href = 'projects.html'">Projects</div>
+        <div class="header-button" onclick="window.location.href = 'https:/\/www.worldcubeassociation.org/persons/2022CZAK01'">Cubing</div>
+    </nav>
+
+    <!-- only mobile -->
+    <button class="sidebar-hamburger-button" onclick="hamburgerButtonPress()">&#9776;</button>
+    <nav class="sidebar">
+        <img class="sidebar-logo" src="images/logo.svg">
+        <div class="sidebar-button" onclick="window.location.href = 'index.html'">Home</div>
+        <div class="sidebar-button" onclick="window.location.href = 'about.html'">About</div>
+        <div class="sidebar-button" onclick="window.location.href = 'projects.html'">Projects</div>
+        <div class="sidebar-button" onclick="window.location.href = 'https:/\/www.worldcubeassociation.org/persons/2022CZAK01'">Cubing</div>
+    </nav>
+    
+    <main class="main">
+        <span class="title">Projects</span>
+        <div class="projectsContainer">
+            <!-- Project's -->
+            <project-element>
+                <span slot="name">Jam</span>
+                <span slot="whatitis">Programming Language</span>
+                <span slot="description">Jam is a programming language I made a while ago.</span>
+                <a slot="github" href="https://github.com/jamescc10/JamLang">Github</a>
+                <a slot="test" href="#" style="display: none;">Test</a>
+                <a slot="download" href="https://github.com/jamescc10/JamLang/archive/refs/heads/main.zip">Download</a>
+            </project-element>
+
+            <project-element>
+                <span slot="name">Screenshot</span>
+                <span slot="whatitis">Browser Extension</span>
+                <span slot="description">Screenshot is a browser extension I made for taking screenshots!</span>
+                <a slot="github" href="https://github.com/jamescc10/screenshot-extension">Github</a>
+                <a slot="test" href="#" style="display: none;">Test</a>
+                <a slot="download" href="https://chromewebstore.google.com/detail/screenshot/cmfejpgdgigafgobaiipkgmkjemjeegj">Download</a>
+            </project-element>
+
+            <project-element>
+                <span slot="name">Personal Website</span>
+                <span slot="whatitis">Website</span>
+                <span slot="description">This is a website I made about myself!</span>
+                <a slot="github" href="https://github.com/jamescc10/jamescc10.github.io">Github</a>
+                <a slot="test" href="#" style="display: none;">Test</a>
+                <a slot="download" href="https://github.com/jamescc10/jamescc10.github.io/archive/refs/heads/main.zip">Download</a>
+            </project-element>
+        </div>
+    </main>
+
+    <!-- js -->
+    <script lang="js" src="js/nav.js"></script>
+    <script lang="js" src="js/projects.js"></script>
 </body>
 </html>

@@ -3,7 +3,7 @@ document.querySelector(".logo").ondragstart = () => { return false; };
 let currentTextIndex = 0;
 
 let textAnimation = async function() {
-    let texts = ["cuber", "programmer", "gd player"];
+    let texts = ["cuber", "programmer"];
     let textHTML = document.getElementById('textChange');
     
     let lastText = texts[currentTextIndex];

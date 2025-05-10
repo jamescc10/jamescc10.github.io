@@ -1,0 +1,48 @@
+.main {
+    margin: 0;
+    padding: 0;
+    width: 80vw;
+    height: fit-content;
+
+    margin-left: 50%;
+    margin-top: 5%;
+
+    text-align: center;
+    z-index: 1;
+}
+
+.title {
+    font-size: 3rem;
+}
+
+.projectsContainer {
+    margin-top: 2vh;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 3vh 3vw;
+    text-align: left;
+}
+
+project-element {
+    margin: 0;
+    padding: 0;
+}
+
+@media screen and (min-width: 550px) { /* not phone / big screen */
+    .main {
+        margin-top: 2%;
+        transform: translate(-50%, -2%);
+    }
+}
+
+@media screen and (max-width: 550px) { /* if its under 500px its mobile or small screen */
+    .main {
+        margin-top: 20vh;
+        transform: translate(-50%, -15%);
+    }
+
+    html, body {
+        overflow-y: auto;
+    }
+}

@@ -1,4 +1,4 @@
-@media screen and (min-width: 500px) { /* not phone / big screen */
+@media screen and (min-width: 550px) { /* not phone / big screen */
     .main {
         margin: 0;
         padding: 0;
@@ -38,7 +38,7 @@
     }
 }
 
-@media screen and (max-width: 500px) { /* if its under 500px its mobile or small screen */
+@media screen and (max-width: 550px) { /* if its under 500px its mobile or small screen */
     .main {
         margin: 0;
         padding: 0;
